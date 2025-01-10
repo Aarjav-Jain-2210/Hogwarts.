@@ -39,27 +39,23 @@ Contributions are welcome! If you have any ideas for improvements, open an issue
 ## Credits
 Created by:
 
-[![Kanika Chauhan](https://img.shields.io/badge/Kanika_Chauhan-GitHub-00F79?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Kanika1305) 
+[![Aarjav Jain](https://img.shields.io/badge/Kanika_Chauhan-GitHub-00F79?logo=github&logoColor=white&style=for-the-badge)]((https://github.com/Aarjav-Jain-2210)) 
 
-Under the guidance of:
-
-
-[![Kunal Upadhyay GitHub](https://img.shields.io/badge/Kunal_Upadhyay-GitHub-red?logo=github&style=for-the-badge)](https://github.com/Kunal-Upadhyay)               [![Prateek Kumar GitHub](https://img.shields.io/badge/Prateek_Kumar-GitHub-red?logo=github&style=for-the-badge)](https://github.com/geeekdude)
 
 
 
 
 
 ## Developer:
-Kanika Chauhan
+Aarjav Jain
 
 ## Contacts:
 
-[![Gmail](https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:kanika13c@gmail.com)
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge)](mailto:aarjavjain2210@gmail.com)
 
 
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/kanika-chauhandb13/)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge)](https://www.linkedin.com/in/aarjav-jain-69502a212/)
 
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Kanika1305)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=for-the-badge)](https://github.com/Aarjav-Jain-2210)
 
 
