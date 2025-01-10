@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter - Movie & Book</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+
+</head>
+<body id="smoke">
+  <main>
+    <header>
+      <a href="\" class="back-button">&#8592;</a>
+      Harry Potter and the Order of Pheonix
+    </header>
+
+    <div class="card-container">
+      <!-- Book Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="bookimg" src="/images/book5.png" alt="Harry Potter Book" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Order of Pheonix (Book)</h2>
+            <span><strong>Author: </strong> J.K. Rowling</span>
+            <p>Harry returns to Hogwarts to find the wizarding world in denial about Voldemort's return. As tensions rise, he forms Dumbledore's Army to fight back against the oppressive Ministry of Magic and faces a tragic loss in a battle at the Ministry of Magic</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="movieimg" src="/images/order-of-the-phoenix.png" alt="Harry Potter Movie" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Order of Pheonix (Movie)</h2>
+            <span><strong>Director: </strong> Chris Columbus</span>
+            <span><strong>Production Companies: </strong> Warner Bros. Pictures, Heyday Films, 1492 Pictures</span>
+            <span><strong>Release Date: </strong> July 11, 2007 (US)</span>
+            <span><strong>Ratings: </strong>7.5/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story Summary Section -->
+    <section class="story-summary">
+      <h2>Story Summary</h2>
+      <p>In Harry Potter and the Order of the Phoenix, Harry returns to Hogwarts for his fifth year, finding a world in denial about Voldemort’s return. The Ministry of Magic, refusing to believe that Voldemort has returned, appoints the tyrannical Dolores Umbridge as the new Defense Against the Dark Arts teacher. Umbridge enforces the Ministry's control over Hogwarts, banning practical defense lessons and punishing those who defy her.
+
+        Frustrated, Harry, with the help of Ron and Hermione, secretly forms Dumbledore’s Army, a student group that trains in defense magic to prepare for the growing threat. Harry also begins experiencing visions of Voldemort’s plans, revealing a mysterious connection between them. Meanwhile, Harry struggles with his isolation, as the wizarding community continues to doubt his claims of Voldemort’s return.
+        
+        The climax of the story occurs when Harry and his friends venture to the Ministry of Magic, where they encounter Death Eaters in the Department of Mysteries. In a fierce battle, Sirius Black, Harry’s godfather, is killed. The film ends with Harry learning of the prophecy that connects him to Voldemort, setting the stage for the final confrontation. The movie explores themes of resistance, loss, and the power of friendship in the face of growing darkness.</p>
+    </section>
+
+    <!-- Movie Trailer Section -->
+    <div class="trailer-section">
+      <h2 class="watch">Watch the Movie Trailer</h2>
+      <div class="trailer">
+        <iframe width="750" height="315" src="https://www.youtube.com/embed/LLAaW1EgyY8" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; 2024 Hogwarts School of Witchcraft and Wizardry | All rights reserved.</span>
+    <span class="footer-credit">Enchanted by <a href="#" class="footer-name" id="reloadLink">Kanika Chauhan</a></span>
+  </footer>
+
+  <script>
+    VANTA.FOG({
+      el: "main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xf9120a,
+      midtoneColor: 0x630ca2,
+      lowlightColor:  0x4a0100,
+      baseColor:  0x2e1204 ,
+      blurFactor: 0.57,
+    })
+  </script>
+</body>
+</html>

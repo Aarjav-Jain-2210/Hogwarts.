@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+  <link rel="icon" href="icons8-magic-96.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <h1>Harry Potter Magical Store</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="store">
+      <h2>Shop Harry Potter Merchandise</h2>
+      <div class="product-container">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="/images/wand.jpg" alt="Harry Potter Wand">
+          <h3>Harry Potter Wand</h3>
+          <p class="price">$29.99</p>
+          <a href="https://www.amazon.com/dp/B085VFYXW8" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="/images/bookseries.jpg" alt="Harry Potter Book">
+          <h3>Harry Potter Book Series</h3>
+          <p class="price">$99.99</p>
+          <a href="https://www.amazon.com/dp/0545790352" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="/images/scarf_.jpg" alt="Gryffindor Scarf">
+          <h3>Gryffindor Scarf</h3>
+          <p class="price">$18.99</p>
+          <a href="https://www.amazon.com/dp/B08K8QY7LF" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="/images/hoodie.jpg" alt="Harry Potter Hoodie">
+          <h3>Harry Potter Hoodie</h3>
+          <p class="price">$39.99</p>
+          <a href="https://www.amazon.com/dp/B08MN2QJ7S" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card">
+          <img src="/images/socks.jpg" alt="Harry Potter Socks">
+          <h3>Harry Potter Socks</h3>
+          <p class="price">$12.99</p>
+          <a href="https://www.amazon.com/dp/B01I2EC7KS" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card">
+          <img src="/images/tie.jpg" alt="Slytherin Tie">
+          <h3>Slytherin Tie</h3>
+          <p class="price">$15.99</p>
+          <a href="https://www.amazon.com/dp/B07FK8MKTS" target="_blank" class="buy-button">Buy Now</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Enchanted by <a href=""><span class="footer-name">Aarjav Jain</span> </a>
+      | 
+      <a href="mailto:aarjavjain2210@gmail.com" class="footer-contact">
+        <img src="/icons/SimpleIconsGmail.png" alt="Email" class="icon"> Gmail
+      </a> 
+      <a href="https://github.com/Aarjav-Jain-2210" target="_blank" class="footer-contact">
+        <img src="/icons/IconoirGithub.png" alt="GitHub" class="icon"> GitHub
+      </a>
+    </p>
+  </footer>
+
+</body>
+
+<script>
+    tsParticles.load("tsparticles", {
+      particles: {
+        number: { value: 50 },
+        color: { value: ["#FFA500", "#FFD700", "#ffff"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.4, random: { enable: true, minimumValue: 0.6 }, animation: { enable: true, speed: 2, minimumValue: 0.5, sync: false } },
+        size: { value: 5, random: { enable: true, minimumValue: 3 }, animation: { enable: true, speed: 5, minimumValue: 2, sync: false } },
+        move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
+        shadow: { enable: true, color: "#FFD700", blur: 10 }
+      }
+    });
+</script>
+
+</html>

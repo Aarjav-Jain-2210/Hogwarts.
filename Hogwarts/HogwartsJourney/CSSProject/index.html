@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Harry Potter - Welcome to Hogwarts">
+    <meta property="og:description" content="Step into the magical world of Harry Potter! Explore Hogwarts, pick your favorite book, and experience the wizarding world like never before.">
+    <meta property="og:image" content="https://i.imgur.com/g8WJEFC.jpeg">
+    <meta property="og:image:type" content="image/jpeg"> 
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:url" content="https://hogwartsjourney.netlify.app/">
+    <meta property="og:type" content="website"> 
+    <meta name="keywords" content="Harry Potter, Hogwarts, Magic, Wizarding World, JK Rowling, Hogwarts School, Witches, Wizards, Spells, Potions, Fantasy, Adventure, Books, Movies, Kanika Chauhan, Harry Potter themes, Wizarding experience, Hogwarts journey, Magic world, Harry Potter fan site">
+    <meta name="description" content="Welcome to the magical world of Harry Potter! Join us at Hogwarts School of Witchcraft and Wizardry where you can relive the most iconic moments from the Harry Potter series. Choose your journey, explore the enchanted universe, and experience magic like never before. Whether you're a fan of the books, movies, or both, your magical adventure begins here!">
+    <title>Harry Potter - Welcome to Hogwarts</title>
+    <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+    <link rel="icon" href="icons8-magic-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+</head>
+<body style="font-family: fonth;" id="tsparticles">
+  
+    <header style="font-family: fonth;" class="scroll">
+      <h1>Welcome to Hogwarts</h1>
+      <span>Your magical journey awaits!</span>
+    </header>
+  
+    <main>
+        <audio autoplay loop>
+            <source src="harry_potter_theme_1.mp3" type="audio/mp3">
+        </audio>
+      
+        <h2>Choose Your Journey!</h2>
+
+        <!-- Book Section -->
+        <nav class="container">
+            <a href="thephilospherstone/"><img src="images/p1.png" alt="book1"></a>
+            <a href="thechamberofsecrets/"><img src="images/p2.png" alt="book2"></a>
+            <a href="theprizonerofazkaban/"><img src="images/p3.png" alt="book3"></a>
+            <a href="thegobletoffire/"><img src="images/p4.png" alt="book4"></a>
+            <a href="theorderofthephoenix/"><img src="images/p5.png" alt="book5"></a>
+            <a href="thehalfbloodprince/"><img src="images/p6.png" alt="book6"></a>
+            <a href="thedeathlyhallows/"><img src="images/p7.png" alt="book7"></a>
+        </nav>
+    </main>
+    
+    <footer>
+      <p>
+          Enchanted by  <a href=""><span class="footer-name">Aarjav Jain</span></a>
+          |
+          <a href="mailto:aarjavjain2210@gmail.com" class="footer-contact">
+              <img src="icons/SimpleIconsGmail.png" alt="Email" class="icon"> Gmail
+          </a>
+          <a href="https://github.com/Aarjav-Jain-2210" target="_blank" class="footer-contact">
+              <img src="icons/IconoirGithub.png" alt="GitHub" class="icon"> GitHub
+          </a>
+          <a href="Store/" class="footer-contact">
+              <img src="icons/Store.png" alt="Store" class="icon"> Visit Our Store
+          </a>
+      </p>
+  </footer>
+  
+</body>
+<script>
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 50 },
+      color: { value: ["#FFA500", "#FFD700", "#ffff"] },
+      shape: { type: "circle" },
+      opacity: { value: 0.4, random: { enable: true, minimumValue: 0.6 }, animation: { enable: true, speed: 2, minimumValue: 0.5, sync: false } },
+      size: { value: 5, random: { enable: true, minimumValue: 3 }, animation: { enable: true, speed: 5, minimumValue: 2, sync: false } },
+      move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
+      shadow: { enable: true, color: "#FFD700", blur: 10 }
+    }
+  });
+  </script>
+</html>

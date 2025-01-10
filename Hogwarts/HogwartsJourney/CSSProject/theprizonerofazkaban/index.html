@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter - Movie & Book</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+
+</head>
+<body id="smoke">
+  <main>
+    <header>
+      <a href="\" class="back-button">&#8592;</a>
+      Harry Potter and the Prizoner of Azkaban
+    </header>
+
+    <div class="card-container">
+      <!-- Book Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="bookimg" src="/images/book3.png" alt="Harry Potter Book" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Prisoner of Azkaban (Book)</h2>
+            <span><strong>Author: </strong> J.K. Rowling</span>
+            <p>In his third year at Hogwarts, Harry discovers the truth about Sirius Black, the mysterious prisoner of Azkaban, and faces new challenges as dark forces begin to close in.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="movieimg" src="/images/prisoner-of-azkaban.png" alt="Harry Potter Movie" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Prisoner of Azkaban (Movie)</h2>
+            <span><strong>Director: </strong> Chris Columbus</span>
+            <span><strong>Production Companies: </strong> Warner Bros. Pictures, Heyday Films, 1492 Pictures</span>
+            <span><strong>Release Date: </strong> June 4, 2004 (US)</span>
+            <span><strong>Ratings: </strong>7.9/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story Summary Section -->
+    <section class="story-summary">
+      <h2>Story Summary</h2>
+      <p>In "Harry Potter and the Prisoner of Azkaban" (Part 3), Harry returns to Hogwarts for his third year, but his summer is marked by disturbing news: Sirius Black, a notorious prisoner, has escaped from Azkaban, and it’s believed he’s coming for Harry. The school is placed under guard by Dementors, terrifying creatures that drain happiness. Despite their presence, Harry learns more about his parents' past and the betrayal that led to their deaths.
+
+        As the year progresses, Harry discovers secrets about Sirius Black’s connection to his family. With the help of Hermione's time-turner, they uncover the truth—that Sirius is not the enemy but was framed for murder. The real traitor is Peter Pettigrew, a former friend of Harry’s parents, who has been hiding in plain sight as Ron’s pet rat, Scabbers.
+        
+        Harry and Hermione free Sirius, who reveals that he is Harry’s godfather. However, Pettigrew escapes, preventing Sirius from clearing his name. The story ends with Harry feeling hopeful for the future, knowing he has someone who truly cares for him.
+        
+        This installment is pivotal for Harry, as it introduces the theme of betrayal and deepens his understanding of his parents’ legacy, shaping his journey forward.
+        </p>
+    </section>
+
+    <!-- Movie Trailer Section -->
+    <div class="trailer-section">
+      <h2 class="watch">Watch the Movie Trailer</h2>
+    
+        <iframe width="750" height="315" src="https://www.youtube.com/embed/VwErvYgoH70" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+  <span>&copy; 2024 Hogwarts School of Witchcraft and Wizardry | All rights reserved.</span>
+  <span class="footer-credit">Enchanted by <a href="#" class="footer-name" id="reloadLink">Kanika Chauhan</a></span>
+</footer>
+
+  <script>
+    VANTA.FOG({
+      el: "main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor:0xa2d5ef,
+      midtoneColor: 0x4073a9,
+      lowlightColor:0xffffff,
+      baseColor:0x20824,
+      blurFactor: 0.57,
+    })
+  </script>
+</body>
+</html>

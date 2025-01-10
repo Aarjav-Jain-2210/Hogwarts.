@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter - Deathly Hallows</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+</head>
+<body id="smoke">
+  <main>
+    <header>
+      <a href="\" class="back-button">&#8592;</a>
+      Harry Potter and the Deathly Hallows
+    </header>
+
+    <div class="card-container">
+      <!-- Book Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="bookimg" src="/images/book7 (1).png" alt="Harry Potter Book" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Deathly Hallows (Book)</h2>
+            <span><strong>Author: </strong> J.K. Rowling</span>
+            <p>In the final book, Harry, Ron, and Hermione leave Hogwarts to destroy Voldemort's Horcruxes and defeat him. The story culminates in the Battle of Hogwarts, where Harry must make the ultimate sacrifice to stop Voldemort for good.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie Card 1 (Part 1) -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="movieimg" src="/images/deathly-hallows-part.png" alt="Deathly Hallows Part 1" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Deathly Hallows: Part 1 (Movie)</h2>
+            <span><strong>Director: </strong> David Yates</span>
+            <span><strong>Production Companies: </strong> Warner Bros. Pictures, Heyday Films</span>
+            <span><strong>Release Date: </strong> November 19, 2010 (US)</span>
+            <span><strong>Ratings: </strong>7.7/10</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie Card 2 (Part 2) -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img id="p2" class="movieimg" src="/images/deathly-hallows-part-2-it-all-ends-poster-1050x0-c-default.jpg" alt="Deathly Hallows Part 2" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Deathly Hallows: Part 2 (Movie)</h2>
+            <span><strong>Director: </strong> David Yates</span>
+            <span><strong>Production Companies: </strong> Warner Bros. Pictures, Heyday Films</span>
+            <span><strong>Release Date: </strong> July 15, 2011 (US)</span>
+            <span><strong>Ratings: </strong>8.1/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story Summary Section -->
+    <section class="story-summary">
+      <h2>Story Summary</h2>
+      <p>Harry Potter and the Deathly Hallows is the seventh and final book in the Harry Potter series by J.K. Rowling. The story follows Harry, Hermione, and Ron as they set out on a dangerous mission to destroy the Horcruxes, objects containing pieces of Voldemort’s soul. With Voldemort gaining control of the Ministry of Magic, the trio must remain in hiding, using their resourcefulness and bravery to uncover the secrets of the Deathly Hallows, three powerful magical artifacts that could help in their fight.
+
+        As they search for the Horcruxes, they encounter numerous obstacles, including betrayal, loss, and the threat of death. The trio’s journey leads them to Hogwarts, where the final battle between the forces of good and evil unfolds. In this ultimate showdown, Harry learns the truth about his own past, the connection between him and Voldemort, and the meaning of sacrifice. With the help of his friends and allies, Harry faces Voldemort in a final, life-or-death confrontation.
+        
+        In the end, Voldemort is defeated, and peace is restored to the wizarding world. The book explores themes of friendship, loyalty, love, and the triumph of good over evil. Deathly Hallows concludes the saga of Harry Potter with emotional depth, action, and resolution, bringing the story to a satisfying and epic conclusion.</p>
+    </section>
+
+    <!-- Movie Trailer Section -->
+    <div class="trailer-section">
+      <h2 class="watch">Watch the Movie Trailers</h2>
+      <div class="trailer">
+        <iframe width="750" height="315" src="https://www.youtube.com/embed/MxqsmsA8y5k" title="Deathly Hallows Part 1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="trailer">
+        <iframe width="750" height="315" src="https://www.youtube.com/embed/kwM3kN8PNOc" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>&copy; 2024 Hogwarts School of Witchcraft and Wizardry | All rights reserved.</span>
+    <span class="footer-credit">Enchanted by <a href="#" class="footer-name" id="reloadLink">Kanika Chauhan</a></span>
+  </footer>
+
+  <script>
+    VANTA.FOG({
+      el: "main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor:0x3b0303,
+      midtoneColor:0x0,
+      lowlightColor: 0xe768ed,
+      baseColor:  0x010000,
+      blurFactor: 0.65,
+    })
+  </script>
+</body>
+</html>

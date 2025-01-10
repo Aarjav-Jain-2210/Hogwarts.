@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harry Potter - Movie & Book</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="x-icon" href="icons8-magic-96.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+</head>
+<body id="smoke">
+  <main>
+    <header>
+      <a href="\" class="back-button">&#8592;</a>
+      Harry Potter and the Half Blood Prince
+    </header>
+
+    <div class="card-container">
+      <!-- Book Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="bookimg" src="/images/book6..png" alt="Harry Potter Book" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Half Blood Prince (Book)</h2>
+            <span><strong>Author: </strong> J.K. Rowling</span>
+            <p>Harry uncovers vital information about Voldemort's past through a mysterious book owned by the Half-Blood Prince. As Voldemort's power grows, Harry faces heartbreaking loss, leading to a darker path toward the final battle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movie Card -->
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img class="movieimg" src="/images/half-blood-prince.png" alt="Harry Potter Movie" />
+          </div>
+          <div class="card-back">
+            <h2>Harry Potter and the Half Blood Prince (Movie)</h2>
+            <span><strong>Director: </strong> Chris Columbus</span>
+            <span><strong>Production Companies: </strong> Warner Bros. Pictures, Heyday Films, 1492 Pictures</span>
+            <span><strong>Release Date: </strong> July 15, 2009 (US)</span>
+            <span><strong>Ratings: </strong>7.6/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story Summary Section -->
+    <section class="story-summary">
+      <h2>Story Summary</h2>
+      <p>In Harry Potter and the Half-Blood Prince, Harry returns to Hogwarts for his sixth year, where he learns more about Lord Voldemort’s past through the memories of Professor Dumbledore. As Voldemort’s influence continues to spread, Harry is tasked with uncovering key information about Voldemort’s Horcruxes, objects that contain pieces of his soul and must be destroyed to defeat him. Harry uses an old, mysterious book that once belonged to the Half-Blood Prince, which aids him in his potions class and provides valuable clues about Voldemort's past.
+
+        Meanwhile, Harry’s friendship with Ron and Hermione deepens, and he navigates the complexities of adolescence, including Ron’s romantic relationship with Lavender Brown and his own feelings for Ginny Weasley. As the story progresses, Harry learns of Snape’s alleged betrayal of Dumbledore, leading to a shocking and tragic finale.
+        
+        In a heart-wrenching twist, Dumbledore is killed by Severus Snape at the top of the Astronomy Tower, marking a pivotal moment in the war against Voldemort. The film ends with Harry realizing that his battle is far from over, and that he must destroy the Horcruxes to finally defeat Voldemort. The movie delves into themes of love, sacrifice, and the complexity of human choices.</p>
+    </section>
+
+    <!-- Movie Trailer Section -->
+    <div class="trailer-section">
+      <h2 class="watch">Watch the Movie Trailer</h2>
+      <div class="trailer">
+        <iframe width="750" height="315" src="https://www.youtube.com/embed/tAiy66Xrsz4" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <span>&copy; 2024 Hogwarts School of Witchcraft and Wizardry | All rights reserved.</span>
+    <span class="footer-credit">Enchanted by <a href="#" class="footer-name" id="reloadLink">Kanika Chauhan</a></span>
+  </footer>
+
+  <script>
+    VANTA.FOG({
+      el: "main",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor:  0x2c290f,
+      midtoneColor: 0x010000,
+      lowlightColor:  0xff2e08,
+      baseColor:  0x010000 ,
+      blurFactor: 0.57,
+    })
+  </script>
+</body>
+</html>
