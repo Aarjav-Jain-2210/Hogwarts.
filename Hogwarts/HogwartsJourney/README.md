@@ -39,7 +39,7 @@ Contributions are welcome! If you have any ideas for improvements, open an issue
 ## Credits
 Created by:
 
-[![Aarjav Jain](https://img.shields.io/badge/Kanika_Chauhan-GitHub-00F79?logo=github&logoColor=white&style=for-the-badge)]((https://github.com/Aarjav-Jain-2210)) 
+[![Aarjav Jain](https://img.shields.io/badge/Aarjav-Jain-2210-GitHub-00F79?logo=github&logoColor=white&style=for-the-badge)]((https://github.com/Aarjav-Jain-2210)) 
 
 
 
