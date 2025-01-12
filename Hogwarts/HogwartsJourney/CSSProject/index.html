@@ -35,6 +35,9 @@
 
         <h2>Choose Your Journey!</h2>
 
+        <!-- Play/Pause Button -->
+        <button id="audioControlBtn">Play Audio</button>
+
         <!-- Book Section with links -->
         <nav class="container">
             <a href="thephilospherstone/" class="book-link"><img src="images/p1.png" alt="book1"></a>
@@ -79,11 +82,24 @@ tsParticles.load("tsparticles", {
     }
 });
 
+// Get the audio player and button
+var audioPlayer = document.getElementById('audioPlayer');
+var audioControlBtn = document.getElementById('audioControlBtn');
+
+// Audio control logic
+audioControlBtn.addEventListener('click', function() {
+    if (audioPlayer.paused) {
+        audioPlayer.muted = false; // Unmute the audio
+        audioPlayer.play(); // Play the audio
+        audioControlBtn.textContent = 'Pause Audio'; // Change button text to 'Pause'
+    } else {
+        audioPlayer.pause(); // Pause the audio
+        audioControlBtn.textContent = 'Play Audio'; // Change button text to 'Play'
+    }
+});
+
 // Get all book links
 var bookLinks = document.querySelectorAll('.book-link');
-
-// Get the audio player
-var audioPlayer = document.getElementById('audioPlayer');
 
 // Add event listener to each book link
 bookLinks.forEach(function(link) {
@@ -91,16 +107,10 @@ bookLinks.forEach(function(link) {
         // Prevent default action of the link
         event.preventDefault();
         
-        // Ensure the audio is unmuted and play the audio
-        if (audioPlayer.paused) {
-            audioPlayer.muted = false; // Unmute the audio
-            audioPlayer.play(); // Play the audio
-        }
-        
-        // After the audio starts, navigate to the corresponding link
+        // Navigate to the book link after a small delay
         setTimeout(function() {
             window.location.href = link.href; // Proceed with the link navigation
-        }, 500); // Small delay before navigation to ensure audio starts
+        }, 300); // Small delay before navigation
     });
 });
 </script>
