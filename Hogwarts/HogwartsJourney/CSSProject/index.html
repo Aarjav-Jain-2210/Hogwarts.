@@ -27,12 +27,12 @@
     </header>
   
     <main>
-         <!-- Audio player with autoplay and loop enabled -->
-        <audio autoplay loop>
+           <!-- Audio player with autoplay and loop enabled, but initially muted -->
+        <audio id="audioPlayer" loop>
             <source src="harry_potter_theme_1.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        
+
         <h2>Choose Your Journey!</h2>
 
         <!-- Book Section -->
@@ -77,7 +77,11 @@
       move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
       shadow: { enable: true, color: "#FFD700", blur: 10 }
         
-
+     // Play the audio after user interaction (e.g., click anywhere)
+    document.body.addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.muted = false; // Unmute the audio
+    audioPlayer.play(); // Play the audio
 
     }
   });
