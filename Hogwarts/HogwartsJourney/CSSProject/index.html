@@ -27,18 +27,13 @@
     </header>
   
     <main>
-        <!-- Audio player with autoplay and loop enabled, but initially muted -->
+        <!-- Audio player with loop enabled -->
         <audio id="audioPlayer" loop>
             <source src="harry_potter_theme_1.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
 
         <h2>Choose Your Journey!</h2>
-
-        <!-- Play/Pause Button -->
-        <button id="audioControlBtn" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
-            Play Audio
-        </button>
 
         <!-- Book Section with links -->
         <nav class="container">
@@ -84,21 +79,8 @@ tsParticles.load("tsparticles", {
     }
 });
 
-// Get the audio player and button
+// Get the audio player
 var audioPlayer = document.getElementById('audioPlayer');
-var audioControlBtn = document.getElementById('audioControlBtn');
-
-// Audio control logic
-audioControlBtn.addEventListener('click', function() {
-    if (audioPlayer.paused) {
-        audioPlayer.muted = false; // Unmute the audio
-        audioPlayer.play(); // Play the audio
-        audioControlBtn.textContent = 'Pause Audio'; // Change button text to 'Pause'
-    } else {
-        audioPlayer.pause(); // Pause the audio
-        audioControlBtn.textContent = 'Play Audio'; // Change button text to 'Play'
-    }
-});
 
 // Get all book links
 var bookLinks = document.querySelectorAll('.book-link');
@@ -108,7 +90,13 @@ bookLinks.forEach(function(link) {
     link.addEventListener('click', function(event) {
         // Prevent default action of the link
         event.preventDefault();
-        
+
+        // Play the audio if not already playing
+        if (audioPlayer.paused) {
+            audioPlayer.muted = false; // Unmute the audio
+            audioPlayer.play(); // Play the audio
+        }
+
         // Navigate to the book link after a small delay
         setTimeout(function() {
             window.location.href = link.href; // Proceed with the link navigation
