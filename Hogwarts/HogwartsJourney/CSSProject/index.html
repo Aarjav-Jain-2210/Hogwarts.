@@ -91,17 +91,16 @@ bookLinks.forEach(function(link) {
         // Prevent default action of the link
         event.preventDefault();
         
-        // Check if audio is already playing
+        // Ensure the audio is unmuted and play the audio
         if (audioPlayer.paused) {
             audioPlayer.muted = false; // Unmute the audio
             audioPlayer.play(); // Play the audio
         }
         
-        // After the audio starts, you can proceed with the normal link action
-        // Optionally, you can navigate to the destination after a small delay
+        // After the audio starts, navigate to the corresponding link
         setTimeout(function() {
             window.location.href = link.href; // Proceed with the link navigation
-        }, 300); // Small delay before navigation
+        }, 500); // Small delay before navigation to ensure audio starts
     });
 });
 </script>
