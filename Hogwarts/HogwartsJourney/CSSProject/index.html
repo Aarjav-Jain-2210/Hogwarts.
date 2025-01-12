@@ -79,7 +79,7 @@ tsParticles.load("tsparticles", {
     }
 });
 
-  // Get audio player and all book links
+ /* // Get audio player and all book links
         const audioPlayer = document.getElementById('audioPlayer');
         const bookLinks = document.querySelectorAll('.book-link');
 
@@ -91,6 +91,26 @@ tsParticles.load("tsparticles", {
                     audioPlayer.play();
                 }
             });
+        });*/
+    // Get audio player and all book links
+        const audioPlayer = document.getElementById('audioPlayer');
+        const bookLinks = document.querySelectorAll('.book-link');
+        let audioStarted = false; // To ensure audio starts only once
+
+        // Add click event to each book link
+        bookLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                // Start audio if it hasn't started already
+                if (!audioStarted) {
+                    audioPlayer.play();
+                    audioStarted = true; // Prevent future calls from restarting the audio
+                }
+            });
+        });
+
+        // Prevent audio from being paused
+        audioPlayer.addEventListener('pause', function () {
+            audioPlayer.play(); // Automatically play if paused
         });
 </script>
 
