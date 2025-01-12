@@ -36,15 +36,15 @@
 
         <h2>Choose Your Journey!</h2>
 
-        <!-- Book Section -->
+       <!-- Book Section with links -->
         <nav class="container">
-            <a href="thephilospherstone/"><img src="images/p1.png" alt="book1"></a>
-            <a href="thechamberofsecrets/"><img src="images/p2.png" alt="book2"></a>
-            <a href="theprizonerofazkaban/"><img src="images/p3.png" alt="book3"></a>
-            <a href="thegobletoffire/"><img src="images/p4.png" alt="book4"></a>
-            <a href="theorderofthephoenix/"><img src="images/p5.png" alt="book5"></a>
-            <a href="thehalfbloodprince/"><img src="images/p6.png" alt="book6"></a>
-            <a href="thedeathlyhallows/"><img src="images/p7.png" alt="book7"></a>
+            <a href="thephilospherstone/" class="book-link"><img src="images/p1.png" alt="book1"></a>
+            <a href="thechamberofsecrets/" class="book-link"><img src="images/p2.png" alt="book2"></a>
+            <a href="theprizonerofazkaban/" class="book-link"><img src="images/p3.png" alt="book3"></a>
+            <a href="thegobletoffire/" class="book-link"><img src="images/p4.png" alt="book4"></a>
+            <a href="theorderofthephoenix/" class="book-link"><img src="images/p5.png" alt="book5"></a>
+            <a href="thehalfbloodprince/" class="book-link"><img src="images/p6.png" alt="book6"></a>
+            <a href="thedeathlyhallows/" class="book-link"><img src="images/p7.png" alt="book7"></a>
         </nav>
     </main>
     
@@ -78,7 +78,7 @@
       move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
       shadow: { enable: true, color: "#FFD700", blur: 10 }
         
-  // Get all book links
+// Get all book links
 var bookLinks = document.querySelectorAll('.book-link');
 
 // Get the audio player
@@ -87,12 +87,22 @@ var audioPlayer = document.getElementById('audioPlayer');
 // Add event listener to each book link
 bookLinks.forEach(function(link) {
     link.addEventListener('click', function(event) {
-        // Play audio when a book link is clicked
-      //  audioPlayer.muted = false; // Unmute the audio
-        audioPlayer.play(); // Play the audio
+        // Prevent default action of the link
+        event.preventDefault();
+        
+        // Check if audio is already playing
+        if (audioPlayer.paused) {
+            audioPlayer.muted = false; // Unmute the audio
+            audioPlayer.play(); // Play the audio
+        }
+        
+        // After the audio starts, you can proceed with the normal link action
+        // Optionally, you can navigate to the destination after a small delay
+        setTimeout(function() {
+            window.location.href = link.href; // Proceed with the link navigation
+        }, 300); // Small delay before navigation
     });
 });
-
     }
   });
   </script>
