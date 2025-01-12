@@ -27,16 +27,15 @@
     </header>
   
     <main>
-           <!-- Audio player with autoplay and loop enabled, but initially muted -->
+        <!-- Audio player with autoplay and loop enabled, but initially muted -->
         <audio id="audioPlayer" loop>
             <source src="harry_potter_theme_1.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        
 
         <h2>Choose Your Journey!</h2>
 
-       <!-- Book Section with links -->
+        <!-- Book Section with links -->
         <nav class="container">
             <a href="thephilospherstone/" class="book-link"><img src="images/p1.png" alt="book1"></a>
             <a href="thechamberofsecrets/" class="book-link"><img src="images/p2.png" alt="book2"></a>
@@ -48,36 +47,38 @@
         </nav>
     </main>
     
-<footer>
-    <p>
-        Enchanted by  <a href=""><span class="footer-name">Aarjav Jain</span></a>
-        |
-        <a href="mailto:aarjavjain2210@gmail.com" class="footer-contact">
-            <img src="icons/SimpleIconsGmail.png" alt="Email" class="icon"> Gmail
-        </a>
-        <a href="https://github.com/Aarjav-Jain-2210" target="_blank" class="footer-contact">
-            <img src="icons/IconoirGithub.png" alt="GitHub" class="icon"> GitHub
-        </a>
-        <a href="Store/" class="footer-contact">
-            <img src="icons/store.png" alt="Store" class="icon"> Visit Our Store
-        </a>
-    </p>
-</footer>
-
-
+    <footer>
+        <p>
+            Enchanted by  <a href=""><span class="footer-name">Aarjav Jain</span></a>
+            |
+            <a href="mailto:aarjavjain2210@gmail.com" class="footer-contact">
+                <img src="icons/SimpleIconsGmail.png" alt="Email" class="icon"> Gmail
+            </a>
+            <a href="https://github.com/Aarjav-Jain-2210" target="_blank" class="footer-contact">
+                <img src="icons/IconoirGithub.png" alt="GitHub" class="icon"> GitHub
+            </a>
+            <a href="Store/" class="footer-contact">
+                <img src="icons/store.png" alt="Store" class="icon"> Visit Our Store
+            </a>
+        </p>
+    </footer>
   
 </body>
+
 <script>
-  tsParticles.load("tsparticles", {
+// Initialize tsParticles
+tsParticles.load("tsparticles", {
     particles: {
-      number: { value: 50 },
-      color: { value: ["#FFA500", "#FFD700", "#ffff"] },
-      shape: { type: "circle" },
-      opacity: { value: 0.4, random: { enable: true, minimumValue: 0.6 }, animation: { enable: true, speed: 2, minimumValue: 0.5, sync: false } },
-      size: { value: 5, random: { enable: true, minimumValue: 3 }, animation: { enable: true, speed: 5, minimumValue: 2, sync: false } },
-      move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
-      shadow: { enable: true, color: "#FFD700", blur: 10 }
-        
+        number: { value: 50 },
+        color: { value: ["#FFA500", "#FFD700", "#ffff"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.4, random: { enable: true, minimumValue: 0.6 }, animation: { enable: true, speed: 2, minimumValue: 0.5, sync: false } },
+        size: { value: 5, random: { enable: true, minimumValue: 3 }, animation: { enable: true, speed: 5, minimumValue: 2, sync: false } },
+        move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
+        shadow: { enable: true, color: "#FFD700", blur: 10 }
+    }
+});
+
 // Get all book links
 var bookLinks = document.querySelectorAll('.book-link');
 
@@ -103,7 +104,6 @@ bookLinks.forEach(function(link) {
         }, 300); // Small delay before navigation
     });
 });
-    }
-  });
-  </script>
+</script>
+
 </html>
