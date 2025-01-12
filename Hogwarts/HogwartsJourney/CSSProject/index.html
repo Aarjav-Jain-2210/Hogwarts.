@@ -27,15 +27,11 @@
     </header>
   
     <main>
-       
-   <!-- Audio player with button to toggle play/pause -->
-        <audio id="audioPlayer" autoplay loop muted>
+        <!-- Audio player with autoplay, loop, and muted enabled -->
+        <audio autoplay loop muted>
             <source src="harry_potter_theme_1.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-
-        <!-- Audio Control Button -->
-        <button id="audioButton" onclick="toggleAudio()">Play/Pause Audio</button>
 
         <h2>Choose Your Journey!</h2>
 
@@ -81,19 +77,7 @@
       move: { direction: "top", enable: true, speed: 1.5, random: false, straight: false, outModes: { default: "out" } },
       shadow: { enable: true, color: "#FFD700", blur: 10 }
         
-// Function to toggle play/pause of the audio
-function toggleAudio() {
-    var audioPlayer = document.getElementById('audioPlayer');
-    var button = document.getElementById('audioButton');
-    
-    if (audioPlayer.paused) {
-        audioPlayer.play();
-        button.textContent = "Pause Audio"; // Update button text
-    } else {
-        audioPlayer.pause();
-        button.textContent = "Play Audio"; // Update button text
-    }
-}
+
 
     }
   });
